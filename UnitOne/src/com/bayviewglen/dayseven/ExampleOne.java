@@ -22,6 +22,16 @@ public class ExampleOne {
 		
 		final int SECONDS_PER_YEAR = SECONDS_PER_MINUTE * MINUTES_PER_HOUR * HOURS_PER_DAY * DAYS_PER_YEAR;
 		System.out.println("The number of seconds in a year is (wait for it...): " + SECONDS_PER_YEAR);
+		
+		double radius = 4.2;
+		double area = Math.PI * Math.pow(radius,  2);
+		
+		/////////////////////////
+		
+		final int NUM_SIDES = 6;
+		int topOfDie = (int)(Math.random() * NUM_SIDES + 1);
+		
+		
 	}
 
 }
