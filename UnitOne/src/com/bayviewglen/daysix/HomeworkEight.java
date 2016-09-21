@@ -8,8 +8,15 @@ public class HomeworkEight {
 		
 		Scanner dolphin = new Scanner(System.in);
 		
+		System.out.print("Enter a postive number: ");
 		double positiveNumber = dolphin.nextDouble();
-		System.out.print("Enter a postive number:");
+		
+		
+		double square = positiveNumber*positiveNumber;
+		double squareroot = Math.sqrt(positiveNumber);
+		
+		System.out.println("The square of " + positiveNumber + " is " + square );
+		System.out.println("The square root of " + positiveNumber + " is " + (long)squareroot);
 	}
 
 }
