@@ -43,16 +43,19 @@ public class BayviewglenPools {
 		System.out.println("The amount of water in 90% of the pool is: " + percentage);
 		
 		//Surface Area
-		double areaOne = (length * depthOfDeep) - ((lengthOfShallow * depthDifference) + (base * depthDifference/2));
-		double areaTwo = (depthOfDeep * width)*2;
+		double areaOne = ((length * depthOfDeep) - (lengthOfShallow * depthDifference) + ((base * depthDifference)/2))*2;
+		double areaTwo = 2*(depthOfDeep * width);
 		double areaThree = length * width;
 		double totalSurfaceArea = areaOne + areaTwo + areaThree;
 		System.out.println("The amount of liner needed to create the pool is: " + totalSurfaceArea);
 		
 		//Cost of Liner
-		
-		
-		
+		double costOfLinerOne = totalSurfaceArea * LINER_PRICE_ONE;
+		double costOfLinerTwo = totalSurfaceArea * LINER_PRICE_TWO;
+		double costOfLinerThree = totalSurfaceArea * LINER_PRICE_THREE;
+		System.out.println("The cost of Liner One per square meter is: $" + costOfLinerOne);
+		System.out.println("The cost of Liner Two per square meter is: $" + costOfLinerTwo);
+		System.out.println("The cost of Liner Three per square meter is: $" + costOfLinerThree);
 	}
 
 }
