@@ -43,9 +43,10 @@ public class BayviewglenPools {
 		System.out.println("The amount of water in 90% of the pool is: " + percentage);
 		
 		//Surface Area
+		double lengthOfDeep = length - (lengthOfShallow + transition);
 		double areaOne = ((length * depthOfDeep) - (lengthOfShallow * depthDifference) + ((base * depthDifference)/2))*2;
-		double areaTwo = 2*(depthOfDeep * width);
-		double areaThree = length * width;
+		double areaTwo = (depthOfDeep * width) + (depthOfShallow * width);
+		double areaThree = (lengthOfShallow + lengthOfDeep + transition) * width;
 		double totalSurfaceArea = areaOne + areaTwo + areaThree;
 		System.out.println("The amount of liner needed to create the pool is: " + totalSurfaceArea);
 		
